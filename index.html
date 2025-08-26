@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MorkFilm / МоркФильм — Главная</title>
+  <meta name="description" content="MorkFilm / МоркФильм — современная киностудия. Новости, актеры, проекты, закулисье и контакты." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay" id="overlay"></div>
+  <div class="progress-bar" id="progress-bar"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+  
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">
+        <span class="logo__accent">Mork</span>Film <span class="logo__slash">/</span> МоркФильм
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link is-active">Главная</a>
+        <a href="about.html" class="nav__link">О нас</a>
+        <a href="actors.html" class="nav__link">Актеры</a>
+        <a href="projects.html" class="nav__link">Проекты</a>
+        <a href="news.html" class="nav__link">Новости</a>
+        <a href="contacts.html" class="nav__link">Контакты</a>
+        <div class="theme-toggle" id="theme-toggle">
+          <div class="theme-toggle__thumb"></div>
+        </div>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Главный экран">
+    <div class="particles" id="particles"></div>
+    <div class="hero__bg" data-parallax style="background-image: url('https://images.unsplash.com/photo-1502139214980-3c28b1b3c1a5?q=80&w=1920&auto=format&fit=crop');"></div>
+    <div class="container hero__content">
+      <h1 class="hero__title" data-animate>Создаем кино, которое <span>живет</span> в голове</h1>
+      <p class="hero__subtitle" data-animate>Современная киностудия полного цикла: кастинг, производство, пост-продакшн. От идеи до мирового релиза.</p>
+      <div class="hero__actions" data-animate>
+        <a href="#about" class="btn btn--primary">Узнать больше</a>
+        <a href="projects.html" class="btn btn--ghost">Наши проекты</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section__title" data-animate>Добро пожаловать в MorkFilm</h2>
+      <p class="section__text" data-animate>
+        <strong>MorkFilm / МоркФильм</strong> — команда режиссёров, сценаристов и продюсеров, которая
+        объединяет технологии и искусство. Мы снимаем художественные фильмы, сериалы,
+        документальные проекты и бренд-видео. Наша миссия — создавать кино, которое вдохновляет и остается с вами надолго.
+      </p>
+      
+      <div class="features">
+        <div class="feature" data-animate>
+          <i class="fas fa-film"></i>
+          <h3>Полный цикл производства</h3>
+          <p>От разработки концепции до финального монтажа и дистрибуции. Мы контролируем каждый этап создания фильма.</p>
+        </div>
+        <div class="feature" data-animate>
+          <i class="fas fa-video"></i>
+          <h3>Современное оборудование</h3>
+          <p>Работаем с техникой последнего поколения для безупречного качества изображения и звука.</p>
+        </div>
+        <div class="feature" data-animate>
+          <i class="fas fa-award"></i>
+          <h3>Признание критиков</h3>
+          <p>Наши проекты отмечены наградами международных кинофестивалей и получили признание зрителей.</p>
+        </div>
+      </div>
+
+      <div class="grid grid--2">
+        <div class="about__media" data-animate>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1517602302552-471fe67acf66?q=80&w=1200&auto=format&fit=crop" alt="Съемочная площадка" class="card-img" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1475274223702-71d19b54a9f2?q=80&w=1200&auto=format&fit=crop" alt="Кинокамера" class="card-img card-img--overlap" />
+        </div>
+        <div>
+          <h3 class="card__title">Наш подход</h3>
+          <p class="card__text">Мы сочетаем традиции классического кинематографа с инновационными технологиями. Каждый проект — это тщательно продуманная история, где каждый кадр имеет значение. Наша команда состоит из профессионалов с многолетним опытом работы в индустрии.</p>
+          
+          <ul class="stats" data-animate>
+            <li><span>25+</span> фестивальных наград</li>
+            <li><span>40+</span> релизов за 3 года</li>
+            <li><span>8К</span> мастеринг и цветокор</li>
+          </ul>
+          
+          <a href="about.html" class="btn btn--ghost" style="margin-top:20px">Подробнее о нас</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="section__title" data-animate>Наше творчество</h2>
+      <p class="section__text" data-animate>Посмотрите трейлер нашего последнего проекта, который получил признание на международных кинофестивалях.</p>
+      
+      <div class="video-player" data-animate>
+        <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1200&auto=format&fit=crop" alt="Трейлер фильма" class="video-player__preview">
+        <div class="video-player__play-btn">
+          <i class="fas fa-play"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Actors Preview -->
+  <section id="actors" class="section">
+    <div class="container">
+      <h2 class="section__title" data-animate>Наши актеры</h2>
+      <p class="section__text" data-animate>Талантливые исполнители, которые дарят жизнь нашим историям. Каждый актер обладает уникальным стилем и подходом к работе.</p>
+      
+      <div class="grid grid--4">
+        <article class="card" data-animate>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=800&auto=format&fit=crop" alt="Илья Морозов" class="card__img">
+          <div class="card__body">
+            <h3 class="card__title">Илья Морозов</h3>
+            <p class="card__meta">Драма / Триллер</p>
+            <p class="card__text">Выпускник Щукинского училища. Снимается в кино и телесериалах с 2015 года. Обладает уникальной способностью передавать глубокие эмоции.</p>
+          </div>
+        </article>
+        
+        <article class="card" data-animate>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" alt="Анна Корд" class="card__img">
+          <div class="card__body">
+            <h3 class="card__title">Анна Корд</h3>
+            <p class="card__meta">Авторское кино</p>
+            <p class="card__text">Лауреат премии "Ника" за лучшую женскую роль в 2022 году. Известна своими проникновенными образами в независимом кино.</p>
+          </div>
+        </article>
+        
+        <article class="card" data-animate>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?q=80&w=800&auto=format&fit=crop" alt="Марк Сафронов" class="card__img">
+          <div class="card__body">
+            <h3 class="card__title">Марк Сафронов</h3>
+            <p class="card__meta">Экшен / Боевые искусства</p>
+            <p class="card__text">Специализируется на трюковых сценах. Профессиональный каскадер. Выполняет сложнейшие трюки без использования дублеров.</p>
+          </div>
+        </article>
+        
+        <article class="card" data-animate>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=800&auto=format&fit=crop" alt="Вера Клыч" class="card__img">
+          <div class="card__body">
+            <h3 class="card__title">Вера Клыч</h3>
+            <p class="card__meta">Комедия / Скетч</p>
+            <p class="card__text">Участница комедийного шоу "Comedy Woman". Яркая комедийная актриса с уникальным чувством юмора и импровизации.</p>
+          </div>
+        </article>
+      </div>
+      
+      <div style="text-align:center; margin-top:30px;">
+        <a href="actors.html" class="btn btn--primary">Все актеры</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="section__title" data-animate>Отзывы</h2>
+      <p class="section__text" data-animate>Что говорят о нас партнеры и зрители.</p>
+      
+      <div class="testimonials">
+        <div class="testimonial" data-animate>
+          <p class="testimonial__text">Работа с MorkFilm — это всегда профессиональный подход и высочайшее качество. Они превратили нашу идею в произведение искусства.</p>
+          <div class="testimonial__author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop" alt="Алексей Петров" class="testimonial__avatar">
+            <div>
+              <strong>Алексей Петров</strong>
+              <div>Продюсер, Star Media</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial" data-animate>
+          <p class="testimonial__text">Фильмы MorkFilm выделяются на фоне других своей художественной ценностью и глубиной. Настоящее киноискусство.</p>
+          <div class="testimonial__author">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop" alt="Мария Иванова" class="testimonial__avatar">
+            <div>
+              <strong>Мария Иванова</strong>
+              <div>Кинокритик</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial" data-animate>
+          <p class="testimonial__text">Как зритель, я ценю внимание к деталям и качество картинки. MorkFilm всегда delivers исключительный визуальный опыт.</p>
+          <div class="testimonial__author">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200&auto=format&fit=crop" alt="Дмитрий Смирнов" class="testimonial__avatar">
+            <div>
+              <strong>Дмитрий Смирнов</strong>
+              <div>Кинообозреватель</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Preview -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section__title" data-animate>Наши проекты</h2>
+      <p class="section__text" data-animate>От короткометражных фильмов до полнометражных картин и сериалов. Каждый проект — это уникальная история.</p>
+      
+      <div class="tabs">
+        <div class="tabs__header">
+          <button class="tabs__button active" data-tab="films">Фильмы</button>
+          <button class="tabs__button" data-tab="series">Сериалы</button>
+          <button class="tabs__button" data-tab="doc">Документальные</button>
+        </div>
+        
+        <div class="tabs__content">
+          <div class="tabs__pane active" id="films">
+            <div class="grid grid--3">
+              <article class="card project" data-animate>
+                <img loading="lazy" src="https://images.unsplash.com/photo-1542228262-3d663b306a56?q=80&w=1200&auto=format&fit=crop" class="card__img" alt="Тени квартала">
+                <div class="card__body">
+                  <h3 class="card__title">Тени квартала</h3>
+                  <p class="card__meta">2023 • Триллер • 18+</p>
+                  <p class="card__text">Неонуар о границе закона и личной морали в большом городе. Призёр Каннского кинофестиваля. Фильм исследует тему выбора между долгом и страстью.</p>
+                  <div class="card__footer">
+                    <a href="#" class="btn btn--ghost" style="width:100%">Смотреть трейлер</a>
+                  </div>
+                </div>
+              </article>
+              
+              <article class="card project" data-animate>
+                <img loading="lazy" src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1200&auto=format&fit=crop" class="card__img" alt="Нулевая Земля">
+                <div class="card__body">
+                  <h3 class="card__title">Нулевая Земля</h3>
+                  <p class="card__meta">2024 • Фантастика • 16+</p>
+                  <p class="card__text">Фантастическая драма о пересоздании мира после глобальной катастрофы. Поднимает вопросы экологии, выживания и человеческих ценностей.</p>
+                  <div class="card__footer">
+                    <a href="#" class="btn btn--ghost" style="width:100%">Смотреть трейлер</a>
+                  </div>
+                </div>
+              </article>
+              
+              <article class="card project" data-animate>
+                <img loading="lazy" src="https://images.unsplash.com/photo-1536240478700-b869070f9279?q=80&w=1200&auto=format&fit=crop" class="card__img" alt="Зола и Снег">
+                <div class="card__body">
+                  <h3 class="card__title">Зола и Снег</h3>
+                  <p class="card__meta">2025 • Драма • 18+</p>
+                  <p class="card__text">История о памяти и выборе, снятая в стиле неонуар. Премьера зимой 2025 года. Фильм рассказывает о сложных взаимоотношениях и последствиях решений.</p>
+                  <div class="card__footer">
+                    <a href="#" class="btn btn--ghost" style="width:100%">Смотреть трейлер</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div style="text-align:center; margin-top:30px;">
+        <a href="projects.html" class="btn btn--primary">Все проекты</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="section__title" data-animate>Наши награды</h2>
+      <p class="section__text" data-animate>Признание профессионального сообщества и любовь зрителей — наша главная награда.</p>
+      
+      <div class="awards">
+        <div class="award" data-animate>
+          <div class="award__icon"><i class="fas fa-trophy"></i></div>
+          <div>
+            <strong>Гран-при Кинофестиваля в Каннах</strong>
+            <div>2023 • "Тени квартала"</div>
+          </div>
+        </div>
+        
+        <div class="award" data-animate>
+          <div class="award__icon"><i class="fas fa-award"></i></div>
+          <div>
+            <strong>Лучшая режиссура</strong>
+            <div>2022 • Московский международный кинофестиваль</div>
+          </div>
+        </div>
+        
+        <div class="award" data-animate>
+          <div class="award__icon"><i class="fas fa-star"></i></div>
+          <div>
+            <strong>Приз зрительских симпатий</strong>
+            <div>2023 • Кинотавр</div>
+          </div>
+        </div>
+        
+        <div class="award" data-animate>
+          <div class="award__icon"><i class="fas fa-film"></i></div>
+          <div>
+            <strong>Лучшая операторская работа</strong>
+            <div>2022 • Золотой орел</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Preview -->
+  <section id="news" class="section">
+    <div class="container">
+      <h2 class="section__title" data-animate>Последние новости</h2>
+      
+      <div class="grid grid--3">
+        <article class="news card" data-animate>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1496346651079-6ca5cb67f42f?q=80&w=1000&auto=format&fit=crop" class="card__img" alt="Награда фестиваля">
+          <div class="card__body">
+            <h3 class="card__title">«Тени квартала» взял Гран-при</h3>
+            <p class="card__meta">25 августа 2025</p>
+            <p class="card__text">Наша картина признана лучшим фильмом на международном фестивале «Nordic Film Week» в Осло. Жюри отметило глубину сценария и визуальную эстетику картины.</p>
+            <div class="card__footer">
+              <a href="news.html" class="btn btn--ghost" style="width:100%">Читать далее</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="news card" data-animate>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1515162305280-9d5e3a58f03a?q=80&w=1000&auto=format&fit=crop" class="card__img" alt="Съемочный павильон">
+          <div class="card__body">
+            <h3 class="card__title">Запуск павильона №3</h3>
+            <p class="card__meta">18 августа 2025</p>
+            <p class="card__text">Открыли новый павильон для съемок с LED-экранами и движной системой света площадью 1200 м². Это позволит создавать еще более реалистичные декорации.</p>
+            <div class="card__footer">
+              <a href="news.html" class="btn btn--ghost" style="width:100%">Читать далее</a>
+            </div>
+          </div>
+        </article>
+        
+        <article class="news card" data-animate>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1000&auto=format&fit=crop" class="card__img" alt="Постер фильма">
+          <div class="card__body">
+            <h3 class="card__title">Тизер «Золы и Снег»</h3>
+            <p class="card__meta">10 августа 2025</p>
+            <p class="card__text">Вышел первый тизер будущего неонуара о памяти и выборе. Премьера — зимой 2025 года. Тизер уже набрал более 2 миллионов просмотров за первые сутки.</p>
+            <div class="card__footer">
+              <a href="news.html" class="btn btn--ghost" style="width:100%">Читать далее</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      
+      <div style="text-align:center; margin-top:30px;">
+        <a href="news.html" class="btn btn--primary">Все новости</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="newsletter" data-animate>
+        <h2 class="section__title">Будьте в курсе</h2>
+        <p class="section__text">Подпишитесь на нашу рассылку, чтобы первыми узнавать о новых проектах и событиях киностудии.</p>
+        
+        <form class="newsletter__form">
+          <input type="email" class="newsletter__input" placeholder="Ваш email" required>
+          <button type="submit" class="btn btn--primary">Подписаться</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts Preview -->
+  <section id="contacts" class="section">
+    <div class="container">
+      <h2 class="section__title" data-animate>Свяжитесь с нами</h2>
+      <p class="section__text" data-animate>Готовы обсудить ваш проект или сотрудничество? Оставьте заявку, и мы свяжемся с вами.</p>
+      
+      <div class="grid grid--2">
+        <div>
+          <ul class="contacts__list" data-animate>
+            <li><i class="fas fa-envelope"></i> <strong>Email:</strong> info@morkfilm.ru</li>
+            <li><i class="fas fa-phone"></i> <strong>Телефон:</strong> +7 (999) 123-45-67</li>
+            <li><i class="fas fa-map-marker-alt"></i> <strong>Адрес:</strong> Москва, ул. Кадровая, 7</li>
+            <li><i class="fas fa-clock"></i> <strong>Режим работы:</strong> Пн-Пт: 9:00-20:00</li>
+          </ul>
+          
+          <div class="socials" data-animate>
+            <a href="#" aria-label="VK" class="socials__link">
+              <i class="fab fa-vk"></i>
+            </a>
+            <a href="#" aria-label="YouTube" class="socials__link">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" aria-label="Instagram" class="socials__link">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="Telegram" class="socials__link">
+              <i class="fab fa-telegram"></i>
+            </a>
+          </div>
+        </div>
+        
+        <form class="form" data-animate>
+          <label class="form__row">
+            <span>Имя</span>
+            <input type="text" placeholder="Ваше имя" required>
+          </label>
+          <label class="form__row">
+            <span>Email</span>
+            <input type="email" placeholder="you@example.com" required>
+          </label>
+          <label class="form__row">
+            <span>Сообщение</span>
+            <textarea rows="4" placeholder="Коротко опишите задачу" required></textarea>
+          </label>
+          <button class="btn btn--primary" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2025 MorkFilm. Все права защищены.</p>
+      <div>
+        <a href="#top" class="to-top" aria-label="Наверх">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
