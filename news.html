@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MorkFilm — Новости</title>
+  <meta name="description" content="Новости MorkFilm — полные посты из Telegram" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="news-page">
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Header (kept consistent with other pages) -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="MorkFilm Логотип" class="logo-img">
+        <span class="logo__accent">Морк</span>Фильм <span class="logo__slash"></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="about.html" class="nav__link">О нас</a>
+        <a href="actors.html" class="nav__link">Актеры</a>
+        <a href="projects.html" class="nav__link">Проекты</a>
+        <a href="news.html" class="nav__link is-active">Новости</a>
+        <a href="contacts.html" class="nav__link">Контакты</a>
+        <div class="theme-toggle" id="theme-toggle">
+          <div class="theme-toggle__thumb"></div>
+        </div>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero hero--small hero--page">
+    <div class="hero__bg" data-parallax style="background-image:url('https://images.unsplash.com/photo-1502139214980-3c28b1b3c1a5?q=80&w=1920&auto=format&fit=crop');"></div>
+    <div class="container hero__content">
+      <h1 class="hero__title" data-animate>Новости</h1>
+      <p class="hero__subtitle" data-animate>Полные тексты постов из нашего Telegram-канала — удобным шрифтом и с адаптивными изображениями.</p>
+    </div>
+  </section>
+
+  <!-- News list (JS will populate #tg-news-container) -->
+  <section class="section">
+    <div class="container">
+      <div class="news-controls" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px">
+        <h2 class="section__title">Все новости</h2>
+        <div style="display:flex;align-items:center;gap:10px">
+          <button id="refresh-news" class="btn btn--ghost"><i class="fas fa-sync-alt"></i> Обновить</button>
+        </div>
+      </div>
+
+      <p class="section__text">Ниже — полные тексты постов. Нажмите на заголовок, если нужно — откроется оригинал в Telegram.</p>
+
+      <div id="tg-news-container" class="news-grid-full" aria-live="polite">
+        <!-- Fallback content (for no-JS) -->
+        <article class="news-post">
+          <h3 class="news-post__title">Загрузка новостей...</h3>
+          <span class="news-post__date">Пожалуйста, подождите</span>
+          <div class="news-post__content">
+            <p>Если вы видите это — на вашей стороне не запущён JavaScript или временная задержка. Мы автоматически загрузим свежие новости при доступности.</p>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align:center; margin-top:28px;">
+        <a href="https://t.me/morkfilm" target="_blank" class="btn btn--primary"><i class="fab fa-telegram"></i> Подписаться на канал</a>
+        <a href="index.html" class="btn btn--ghost" style="margin-left:10px"><i class="fas fa-home"></i> На главную</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Minimal footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>© MorkFilm — Все права защищены</div>
+      <a id="to-top" class="to-top" href="#top" title="Наверх"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <!-- App script (existing app.js handles news rendering) -->
+  <script src="app.js" type="module"></script>
+</body>
+</html>

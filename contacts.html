@@ -1,0 +1,101 @@
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MorkFilm — Контакты</title>
+  <meta name="description" content="MorkFilm — Контакты — MorkFilm">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="overlay" id="overlay"></div>
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="MorkFilm Логотип" class="logo-img">
+        <span class="logo__accent">Морк</span>Фильм <span class="logo__slash"></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="about.html" class="nav__link">О нас</a>
+        <a href="actors.html" class="nav__link">Актеры</a>
+        <a href="projects.html" class="nav__link">Проекты</a>
+        <a href="news.html" class="nav__link">Новости</a>
+        <a href="contacts.html" class="nav__link is-active">Контакты</a>
+        <div class="theme-toggle" id="theme-toggle">
+          <div class="theme-toggle__thumb"></div>
+        </div>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <section class="hero hero--small hero--page">
+    <div class="hero__bg" data-parallax style="background-image:url('https://images.unsplash.com/photo-1502139214980-3c28b1b3c1a5?q=80&w=1920&auto=format&fit=crop');"></div>
+    <div class="container hero__content">
+      <h1 class="hero__title" data-animate>Контакты</h1>
+      <p class="hero__subtitle" data-animate>Свяжитесь с нами — отвечаем в течение 1–2 рабочих дней.</p>
+    </div>
+  </section>
+  
+<section class="section">
+  <div class="container">
+    <div class="grid grid--2">
+      <div data-animate>
+        <h2 class="section__title">Свяжитесь с нами</h2>
+        <p class="section__text">Адрес, email и тг для связи. Мы открыты к предложениям по сотрудничеству, фестивальному участию и заказам.</p>
+        <ul class="contacts__list">
+          <li><i class="fas fa-phone"></i> @t.me/morkakk</li>
+          <li><i class="fas fa-envelope"></i> keery552@gmail.com</li>
+          <li><i class="fas fa-location-dot"></i> Санкт-петербург, Красносельское шоссе, 10</li>
+          <li><i class="fas fa-clock"></i> Пн-Вт 9:00–19:00</li>
+        </ul>
+        <div class="socials">
+          <a href="https://vk.com/morkfilm" aria-label="VK" class="socials__link"><i class="fab fa-vk"></i></a>
+          <a href="https://youtube.com/@morkfilm?feature=shared" aria-label="YouTube" class="socials__link"><i class="fab fa-youtube"></i></a>
+          <a href="https://dtf.ru/morkfilm" aria-label="DTF" class="socials__link"><i class="fas fa-gamepad"></i></a>
+          <a href="https://t.me/morkfilm" aria-label="Telegram" class="socials__link"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
+	  
+        <form class="form" id="contact-form" data-animate action="https://formspree.io/f/mvgborlo" method="POST">
+          <input type="hidden" name="_subject" value="Новое сообщение с сайта MorkFilm">
+          <div class="form__group">
+            <label for="name" class="form__label">Имя</label>
+            <input type="text" id="name" name="name" class="form__input" required>
+          </div>
+          
+          <div class="form__group">
+            <label for="email" class="form__label">Email</label>
+            <input type="email" id="email" name="email" class="form__input" required>
+          </div>
+          
+          <div class="form__group">
+            <label for="message" class="form__label">Сообщение</label>
+            <textarea id="message" name="message" class="form__textarea" rows="5" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn--primary">Отправить сообщение</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2025 MorkFilm. Все права защищены.</p>
+      <div>
+        <a href="#top" class="to-top" id="to-top" aria-label="Наверх">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+<script src="app.js"></script>
+</body>
+</html>

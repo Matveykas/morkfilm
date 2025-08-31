@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MorkFilm — О нас</title>
+  <meta name="description" content="MorkFilm — О нас — MorkFilm">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="overlay" id="overlay"></div>
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="MorkFilm Логотип" class="logo-img">
+        <span class="logo__accent">Морк</span>Фильм <span class="logo__slash"></span> 
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link is-active">Главная</a>
+        <a href="about.html" class="nav__link is-active" class="nav__link">О нас</a>
+        <a href="actors.html" class="nav__link">Актеры</a>
+        <a href="projects.html" class="nav__link">Проекты</a>
+        <a href="news.html" class="nav__link">Новости</a>
+        <a href="contacts.html" class="nav__link">Контакты</a>
+        <div class="theme-toggle" id="theme-toggle">
+          <div class="theme-toggle__thumb"></div>
+        </div>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <section class="hero hero--small hero--page">
+    <div class="hero__bg" data-parallax style="background-image:url('https://images.unsplash.com/photo-1502139214980-3c28b1b3c1a5?q=80&w=1920&auto=format&fit=crop');"></div>
+    <div class="container hero__content">
+      <h1 class="hero__title" data-animate>О студии MorkFilm</h1>
+      <p class="hero__subtitle" data-animate>Киностудия полного цикла: от идеи до проката.</p>
+    </div>
+  </section>
+  
+<section class="section">
+  <div class="container">
+    <h2 class="section__title" data-animate>Миссия и команда</h2>
+    <p class="section__text" data-animate>Мы создаём кино, которое говорит с аудиторией на языке эмоций и визуальных образов. Команда MorkFilm — режиссёры, операторы, продюсеры и художники по свету, объединённые общей эстетикой.</p>
+    <div class="grid grid--2">
+      <div data-animate>
+        <h3 class="card__title">Наш подход</h3>
+        <p class="card__text">Сильный сценарий, тщательная подготовка и инновационные технологии производства — это фундамент наших проектов.</p>
+        <ul class="stats">
+          <li><span>5+</span> проектов</li>
+          <li><span>1+</span> наград</li>
+          <li><span>4</span> года опыта</li>
+        </ul>
+      </div>
+      <div data-animate><div class="card"><img class="card__img" src="https://i.postimg.cc/P5LqRy0K/Picsart-25-08-31-15-30-57-741.jpg" alt="Студия"></div></div>
+    </div>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="container">
+    <h2 class="section__title" data-animate>Этапы производства</h2>
+    <div class="timeline" data-animate>
+      <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__content"><h3>Девелопмент</h3><p>От идеи до сценария — формируем сильную драматургию.</p></div></div>
+      <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__content"><h3>Пре-продакшн</h3><p>Кастинг, локации, подготовка съемочной группы.</p></div></div>
+      <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__content"><h3>Съемки</h3><p>Профессиональная команда и современное оборудование.</p></div></div>
+      <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__content"><h3>Постпродакшн</h3><p>Монтаж, цвет, VFX, звук и мастеринг.</p></div></div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2025 MorkFilm. Все права защищены.</p>
+      <div>
+        <a href="#top" class="to-top" id="to-top" aria-label="Наверх">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+<script src="app.js"></script>
+</body>
+</html>

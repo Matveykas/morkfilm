@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MorkFilm — Актеры</title>
+  <meta name="description" content="MorkFilm — Актеры — MorkFilm">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="overlay" id="overlay"></div>
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="MorkFilm Логотип" class="logo-img">
+        <span class="logo__accent">Морк</span>Фильм <span class="logo__slash"></span> 
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="about.html" class="nav__link">О нас</a>
+        <a href="actors.html" class="nav__link is-active">Актеры</a>
+        <a href="projects.html" class="nav__link">Проекты</a>
+        <a href="news.html" class="nav__link">Новости</a>
+        <a href="contacts.html" class="nav__link">Контакты</a>
+        <div class="theme-toggle" id="theme-toggle">
+          <div class="theme-toggle__thumb"></div>
+        </div>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero hero--small hero--page">
+    <div class="hero__bg" data-parallax style="background-image:url('https://images.unsplash.com/photo-1502139214980-3c28b1b3c1a5?q=80&w=1920&auto=format&fit=crop');"></div>
+    <div class="container hero__content">
+      <h1 class="hero__title" data-animate>Наши актеры</h1>
+      <p class="hero__subtitle" data-animate>Талантливые исполнители, которые дарят жизнь нашим историям</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid--3" id="actors-list">
+        <article class="card actor" data-animate>
+          <img loading="lazy" src="https://i.postimg.cc/s2z616Pg/Picsart-25-08-31-15-05-28-727.jpg" class="card__img" alt="Миша Литвин">
+          <div class="card__body">
+            <h3 class="card__title">Миша Литвин</h3>
+            <p class="card__meta">Комедия</p>
+            <p class="card__text">Постоянный гость наших проектов, появляющийся в эффектных камео.</p>
+          </div>
+        </article>
+        
+        <article class="card actor" data-animate>
+          <img loading="lazy" src="https://i.postimg.cc/8cWH4LNC/Picsart-25-08-31-15-12-44-678.jpg" class="card__img" alt="Максон">
+          <div class="card__body">
+            <h3 class="card__title">Максон</h3>
+            <p class="card__meta">Продюссер</p>
+            <p class="card__text">Главный спонсор и продюссер наших проектов, регулярно предоставляющий нам доступ и средства для создания новых фильмов.</p>
+          </div>
+        </article>
+        
+        
+        <article class="card actor" data-animate>
+          <img loading="lazy" src="images/actors/large_IMG_20250826_214314_118.jpg" class="card__img" alt="Баклан">
+          <div class="card__body">
+            <h3 class="card__title">Баклан</h3>
+            <p class="card__meta">Авторское кино / Комедия</p>
+            <p class="card__text">Режиссёр всех проектов МоркФильма и по совместительству основатель киностудии.</p>
+          </div>
+        </article>
+        
+        <article class="card actor" data-animate>
+          <img loading="lazy" src="images/actors/large_Picsart_25-08-26_21-38-14-529.jpg" class="card__img" alt="Елкат">
+          <div class="card__body">
+            <h3 class="card__title">Елкат</h3>
+            <p class="card__meta">Комедия</p>
+            <p class="card__text">Настоящая легенда киностудии, принявшая участие во всех проектах МоркФильма. Известен своими уникальными образами и профессиональным подходом к каждой роли.</p>
+          </div>
+        </article>
+        
+        <article class="card actor" data-animate>
+          <img loading="lazy" src="images/actors/large_Picsart_25-08-26_21-37-48-449.jpg" class="card__img" alt="Паштет">
+          <div class="card__body">
+            <h3 class="card__title">Паштет</h3>
+            <p class="card__meta">Комедия</p>
+            <p class="card__text">Участник множества комедийного проектов киностудии. Яркая комедийный актёр с уникальным чувством юмора и импровизации.</p>
+          </div>
+        </article>
+        
+        <article class="card actor" data-animate>
+          <img loading="lazy" src="images/actors/large_Picsart_25-08-26_21-39-43-869.jpg" class="card__img" alt="Бобёр">
+          <div class="card__body">
+            <h3 class="card__title">Бобёр</h3>
+            <p class="card__meta">Звукорежиссёр / Композитор</p>
+            <p class="card__text">Звукорежиссёр, композитор киностудии.</p>
+          </div>
+        </article>
+        
+        <article class="card actor" data-animate>
+          <img loading="lazy" src="images/actors/large_Picsart_25-08-26_21-42-45-978.jpg" class="card__img" alt="Мотя">
+          <div class="card__body">
+            <h3 class="card__title">Мотя</h3>
+            <p class="card__meta">Ужасы / Комедия</p>
+            <p class="card__text">Главный актёр МоркФильма. Снимается в наших проектах с 2024 года. Обладает уникальной харизмой и заразительной энергией, передающейся через экраны зрителей.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2025 MorkFilm. Все права защищены.</p>
+      <div>
+        <a href="#top" class="to-top" id="to-top" aria-label="Наверх">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MorkFilm — Проекты</title>
+  <meta name="description" content="MorkFilm — Проекты — MorkFilm">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="overlay" id="overlay"></div>
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="MorkFilm Логотип" class="logo-img">
+        <span class="logo__accent">Морк</span>Фильм <span class="logo__slash"></span> 
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link is-active">Главная</a>
+        <a href="about.html" class="nav__link">О нас</a>
+        <a href="actors.html" class="nav__link">Актеры</a>
+        <a href="projects.html" class="nav__link is-active" class="nav__link">Проекты</a>
+        <a href="news.html" class="nav__link">Новости</a>
+        <a href="contacts.html" class="nav__link">Контакты</a>
+        <div class="theme-toggle" id="theme-toggle">
+          <div class="theme-toggle__thumb"></div>
+        </div>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <section class="hero hero--small hero--page">
+    <div class="hero__bg" data-parallax style="background-image:url('https://images.unsplash.com/photo-1502139214980-3c28b1b3c1a5?q=80&w=1920&auto=format&fit=crop');"></div>
+    <div class="container hero__content">
+      <h1 class="hero__title" data-animate>Проекты</h1>
+      <p class="hero__subtitle" data-animate>Каждый проект — это тщательно отстроенная история.</p>
+    </div>
+  </section>
+  <section class="section">
+  <div class="container">
+    <h2 class="section__title" data-animate>Наши проекты</h2>
+    <p class="section__text" data-animate>От короткометражных фильмов до полнометражных картин и клипов.</p>
+    <div class="grid grid--3">
+      <article class="card project" data-animate>
+  <img loading="lazy" src="https://i.postimg.cc/GhN1fCFT/Picsart-25-08-31-14-31-26-768.jpg" class="card__img" alt="Елкат">
+  <div class="card__body">
+    <h3 class="card__title">Елкат</h3>
+    <p class="card__meta">2024 • Комедия</p>
+    <p class="card__text">Провинциальный журналист приезжает в городскую школу, чтобы заснять репортаж о празднике 8-е марта.</p>
+  </div>
+  <div class="card__footer"><a class="btn btn--ghost" href="https://youtu.be/dghSnyhtp1w?si=SotDK5n51qgwU5vP">Подробнее</a></div>
+</article>
+<article class="card project" data-animate>
+  <img loading="lazy" src="https://i.postimg.cc/qMgTQR3d/Picsart-25-08-31-14-31-14-436.jpg" class="card__img" alt="Два Дня">
+  <div class="card__body">
+    <h3 class="card__title">Два Дня</h3>
+    <p class="card__meta">2025 • Ужасы/Драма</p>
+    <p class="card__text">Мотя заявляет, что болен неизлечимой болезнью. Перед своим отъездом он просит Баклана провести с ним последние выходные и записать все, что будет происходить, параллельно засняв небольшой котрометражный ужастик. Однако ребята еще не догадываются, каким ужасом обернутся для них эти два дня.</p>
+  </div>
+  <div class="card__footer"><a class="btn btn--ghost" href="https://youtu.be/iN6CDBwJwb8">Подробнее</a></div>
+</article>
+<article class="card project" data-animate>
+  <img loading="lazy" src="https://i.postimg.cc/k5PPnvhn/Picsart-25-08-31-14-32-12-674.jpg" class="card__img" alt="Мистический квест">
+  <div class="card__body">
+    <h3 class="card__title">Мистический квест</h3>
+    <p class="card__meta">2025 • Комедия/Ужасы</p>
+    <p class="card__text">Два блогера в попытке хайпануть и прославиться покупают на таинственном сайте некий "Мистический квест". Однако проходя задания всё дальше и дальше, ребята сталкиваются с шокирующей и ужасающей правдой о природе данного квеста.</p>
+  </div>
+  <div class="card__footer"><a class="btn btn--ghost" href="https://youtu.be/YmzGGTwb7Jc?si=X-M-s9GAiBR79uio">Подробнее</a></div>
+</article>
+<article class="card project" data-animate>
+  <img loading="lazy" src="https://i.postimg.cc/0NsjLP8y/Picsart-25-08-31-14-35-07-714.jpg" class="card__img" alt="Паштет Маринин: Путь к чемпиону">
+  <div class="card__body">
+    <h3 class="card__title">Паштет Маринин: Путь к чемпиону</h3>
+    <p class="card__meta">2025 • Комедия/Спорт</p>
+    <p class="card__text">Паштет решает наконец справиться со своей давней проблемой — лишним весом. Однако задира, который издевался над ним с первого класса, снова начинает мешать ему, насмехаясь и демотивируя. Сможет ли Паштет найти в себе силы не обращать внимание на негатив и стать лучшей версией себя?</p>
+  </div>
+  <div class="card__footer"><a class="btn btn--ghost" href="https://youtu.be/0GZ4u5BzyiY?si=1j6ecSZsiqoN20Mq">Подробнее</a></div>
+</article>
+<article class="card project" data-animate>
+  <img loading="lazy" src="https://i.postimg.cc/wMjdCx4L/Picsart-25-08-31-14-35-37-557.jpg" class="card__img" alt="Елкат, МоркФильм">
+  <div class="card__body">
+    <h3 class="card__title">Елкат, МоркФильм</h3>
+    <p class="card__meta">2023 • Музыка</p>
+    <p class="card__text">Спустя год легенда МоркФильма возвращается с новым треком! (https://youtu.be/UVqkW9M-JTU?si=D80V4JeH8s5w24dM)</p>
+  </div>
+  <div class="card__footer"><a class="btn btn--ghost" href="https://youtu.be/UVqkW9M-JTU?si=D80V4JeH8s5w24dM">Подробнее</a></div>
+</article>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2025 MorkFilm. Все права защищены.</p>
+      <div>
+        <a href="#top" class="to-top" id="to-top" aria-label="Наверх">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+<script src="app.js"></script>
+</body>
+</html>
