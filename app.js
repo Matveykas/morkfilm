@@ -472,9 +472,6 @@ function displayNews(news, isHomePage = false) {
         <div class="card__body">
           <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
             <h3 class="card__title">${item.title}</h3>
-            <button class="delete-news-btn" data-news-id="${item.id}" title="Удалить новость">
-              <i class="fas fa-times"></i>
-            </button>
           </div>
           <p class="card__meta">${item.date} • Telegram</p>
           
@@ -491,27 +488,6 @@ function displayNews(news, isHomePage = false) {
         </div>
       </div>
     `).join('');
-
-    // Добавляем обработчики для кнопок удаления
-    document.querySelectorAll('.delete-news-btn').forEach(btn => {
-      btn.addEventListener('click', function() {
-        const newsId = this.dataset.newsId;
-        if (confirm('Удалить эту новость?')) {
-          fetch(`/api/telegram-news/${newsId}`, { method: 'DELETE' })
-            .then(response => response.json())
-            .then(data => {
-              if (data.success) {
-                this.closest('.news-item').remove();
-                showNotification('Новость удалена', 'success');
-              }
-            })
-            .catch(error => {
-              console.error('Ошибка удаления новости:', error);
-              showNotification('Ошибка при удалении новости', 'error');
-            });
-        }
-      });
-    });
   }
   
   // Анимируем появление
